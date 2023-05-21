@@ -1,0 +1,18 @@
+{
+  "name": "AXA PoC",
+  "version": "2.0.0",
+  "description": "An Applitools PoC ran for AXA",
+  "main": "index.js",
+  "scripts": {
+    "assertionTest": "npx cypress run --spec ./cypress/e2e/assertionTest.cy.js",
+    "setBaseline": "npx cypress run --spec ./cypress/e2e/axa.cy.js",
+    "setCheckpoint": "npx cypress run --spec ./cypress/e2e/axaCheckpoints.cy.js",
+    "cypress:open": "cypress open"
+  },
+  "author": "Saul Rothman",
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.30.1",
+    "cypress": "^12.3.0"
+  }
+}
